@@ -6,7 +6,7 @@ This lab is dedicated to simulating a real cyber attack and endpoint detection a
 
 Eric Capuano's Guide: https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-intro?utm_campaign=post&utm_medium=web
 
-[Setup](https://github.com/jerrterrell/EDR-Attack-and-Defense#setup)
+# Setup
 
 The first step to the lab is setting up both machines. The attack machine will run on Ubuntu Server and the endpoint will be running Windows 11. In order for this lab to work smoothly, Microsoft Defender should be turned disabled (along with other security settings). Sliver will be installed on the Ubuntu machine as the primary attack tool, and LimaCharlie will be setup on the Windows machine as an EDR solution. LimaCharlie will have a sensor linked to the windows machine, and will be importing sysmon logs.
 
@@ -23,7 +23,7 @@ Windows 11 Machine -
 Ubuntu Server Machine - 
 ![image](https://github.com/user-attachments/assets/ed642679-d164-4606-a219-891251ea80a2)
 
-[The Attacks and the Defense](https://github.com/jerrterrell/EDR-Attack-and-Defense#the-attacks-and-the-defense)
+# The Attacks and the Defense
 
 The first step is to generate our payload on Sliver, and implant the malware into the Windows host machine. Then we can create a command and control session after the malware is executed on the endpoint.
 
